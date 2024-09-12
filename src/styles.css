@@ -1,0 +1,42 @@
+.kanban {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 24px;
+}
+
+.board {
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.todo-board {
+  background-color: rgb(213, 236, 216);
+}
+
+.watch-board {
+  background-color: rgb(225, 228, 251);
+}
+
+.later-board {
+  background-color: rgb(244, 244, 244);
+}
+
+.input-box {
+  border: 1px solid #d6d6d6;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 8px;
+}

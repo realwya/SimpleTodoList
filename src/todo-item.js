@@ -5,13 +5,13 @@ class TodoItem {
     LATER: "later",
   };
 
-  constructor(title, description, dueDate, tags = [], category = category.TO_DO) {
+  constructor(title, tags = [], category = category.TO_DO, description, dueDate) {
     this.title = title;
-    this.description = description;
-    this.dueDate = dueDate;
     this.tags = tags;
     this.category = category;
     this.done = false;
+    this.description = description;
+    this.dueDate = dueDate;
   }
 
   setTitle(title) {
