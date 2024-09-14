@@ -1,7 +1,7 @@
 class TodoItem {
   static category = {
-    TO_DO: "to do",
-    WATCHING: "watching",
+    TODO: "todo",
+    WATCH: "watch",
     LATER: "later",
   };
 

@@ -10,6 +10,7 @@ class Tag {
   setName(name) {
     this.name = name;
   }
+
 }
 
 export default Tag;

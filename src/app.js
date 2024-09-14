@@ -12,6 +12,10 @@ class App {
     this.tags.push(tag);
   }
 
+  findTagByName(tagName) {
+    return this.tags.find((t) => t.getName() === tagName);
+  }
+
   getAllTodos() {
     return this.todos;
   }
