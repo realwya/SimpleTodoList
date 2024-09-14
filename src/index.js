@@ -14,6 +14,7 @@ function createTodo(title, tags, category, description, dueDate) {
 function createTag(name) {
   const tag = new Tag(name);
   app.addTag(tag);
+  return tag;
 }
 
 function getOrCreateTag(tagName) {
@@ -24,10 +25,6 @@ function getOrCreateTag(tagName) {
     tag = createTag(tagName);
   }
   return tag;
-}
-
-function init() {
-  createTodo("Todo 1", [createTag("Tag 1")], "to do", "Description 1", new Date());
 }
 
 domManipulator.todoForm.addEventListener("submit", (e) => {
@@ -43,6 +40,6 @@ domManipulator.todoForm.addEventListener("submit", (e) => {
     data.get("description"),
     data.get("dueDate")
   );
-});
 
-init();
+  e.target.reset();
+});

@@ -24,8 +24,15 @@ class DOMManipulator {
     const li = document.createElement("li");
     li.classList.add("task-item");
     li.innerHTML = `
-      <input type="checkbox" id="${todo.title}" name="${todo.title}">
-      <label for="${todo.title}">${todo.title}</label>
+      <div class="task-item-content">
+        <input type="checkbox" id="${todo.title}" name="${todo.title}">
+        <label for="${todo.title}">${todo.title}</label>
+        <p>${todo.description}</p>
+        <p>${todo.dueDate}</p>
+        <div class="task-item-tags">
+          ${todo.tags.map((tag) => `<span>${tag.name}</span>`).join("")}
+        </div>
+      </div>
     `;
     return li;
   }
